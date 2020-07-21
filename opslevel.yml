@@ -4,7 +4,7 @@ DEFAULT: &DEFAULT
   framework: Elixir
 service:
   <<: *DEFAULT
-  name: Rails Webapp
+  name: Rails Testing
   lifecycle: 
   tier: tier_1
   product: OpsLevel
@@ -12,6 +12,9 @@ service:
   language: Ruby
   description: It's the whole website in a single rails monolith.
   tools:
+  - name: GitLab
+    category: code
+    url: https://gitlab.com/jklabsinc/OpsLevel
   - name: GitLab
     category: code
     url: https://gitlab.com/jklabsinc/OpsLevel
